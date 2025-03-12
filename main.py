@@ -15,9 +15,9 @@ def echo_message(message):
     return message.answer(message.text)
 
 
-async def main():
+def main():
     return dp.start_polling(bot)
 
 
 if __name__ == "__main__":
-    dp.run_polling()
+    main()
