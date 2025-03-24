@@ -4,7 +4,7 @@ import logging
 from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from config import TOKEN
-from utils import setup_logger
+# from utils import setup_logger
 
 
 bot = Bot(token=TOKEN)
