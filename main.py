@@ -4,7 +4,7 @@ import logging
 from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from config import TOKEN
-# from utils import setup_logger
+from utils import setup_logger
 
 
 bot = Bot(token=TOKEN)
@@ -30,11 +30,11 @@ async def main():
     и добавить полученный токен в файл .env
     """
     
-    # Установить общий уровень логирования
-    logging.basicConfig(level=logging.DEBUG)
+    # # Установить общий уровень логирования
+    # logging.basicConfig(level=logging.DEBUG)
 
-    # # запуск логирования
-    # setup_logger()
+    # запуск логирования
+    setup_logger(fname=__name__)
 
     # Запуск бота в polling-режиме
     await dp.start_polling(bot)
