@@ -18,6 +18,11 @@ async def command_start_handler(message: types.Message):
     await message.answer(text="Привет!", reply_markup=keyboard_continue)
 
 
+async def command_help_handler(message: types.Message):
+    """Команда help"""
+    await message.answer(text="Справка!...")
+
+
 # Здесь описывается маршрутизация
 async def register_message_handlers(router: Router):
     """Маршрутизация обработчиков"""
