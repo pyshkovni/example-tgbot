@@ -12,4 +12,13 @@ from aiogram.types import CallbackQuery
 
 async def callback_message(callback: CallbackQuery):
     """Ответ на кнопку"""
+
+    # TODO - два коллбек-ответа на кнопку слушатель/преподаватель
+    # async with async_session() as session:
+    #     """Что-то происходит"""
+    #     insert_query = insert(User).values()
+    #     await session.execute(insert_query)
+    #     await session.commit()
+
     await callback.message.answer("Успешно!")
+

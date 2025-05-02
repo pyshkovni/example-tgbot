@@ -1,10 +1,13 @@
-# version1.1.0
+# version3.1.0
 import logging
 import asyncio
 from aiogram import Bot, Dispatcher,types
 from config import TOKEN
 from handlers import register_message_handlers, bot_commands
 
+# установка пакетов для работы с бд
+# pip install sqlalchemy
+# pip install aiosqlite
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)

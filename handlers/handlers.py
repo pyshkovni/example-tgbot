@@ -15,6 +15,16 @@ from .callbacks import callback_message  # импорт из коллбека
 
 async def command_start_handler(message: types.Message):
     """Команда start"""
+
+    # TODO - выбор слушатель/преподаватель, если уже зарегистрирован в бд, то
+    # async with async_session() as session:
+    #     query = select(User).where(message.from_user.id == User.user_id)
+    #     result = await session.execute(query)
+    #     if result.scalars().all():
+    #         pass
+    #     else:
+    #         pass
+
     await message.answer(text="Привет!", reply_markup=keyboard_continue)
 
 
