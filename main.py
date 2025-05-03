@@ -1,10 +1,14 @@
-# version1.1.0
+# version2.1.0
 import logging
 import asyncio
 from aiogram import Bot, Dispatcher,types
 from config import TOKEN
 from handlers import register_message_handlers, bot_commands
 
+# установка пакетов для тестирования
+# pip install pytest
+# pip install pytest-asyncio
+# pip install pytest-mock
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
